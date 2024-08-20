@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodeAndChords.online: Rj Psalms Web Portfolio</title>
+
+        <script
+            src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+            rel="stylesheet" />
+        <script defer
+            src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+        <script>
+            tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        scale: {
+                        '175': '1.75',
+                        '200': '2.00',
+                        '300': '3.00',
+                      },
+                    colors: {
+                        primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a","950":"#172554"}
+                    }
+                    },
+                    fontFamily: {
+                    'body': [
+                    'Inter', 
+                    'ui-sans-serif', 
+                    'system-ui', 
+                    '-apple-system', 
+                    'system-ui', 
+                    'Segoe UI', 
+                    'Roboto', 
+                    'Helvetica Neue', 
+                    'Arial', 
+                    'Noto Sans', 
+                    'sans-serif', 
+                    'Apple Color Emoji', 
+                    'Segoe UI Emoji', 
+                    'Segoe UI Symbol', 
+                    'Noto Color Emoji'
+                ],
+                    'sans': [
+                    'Inter', 
+                    'ui-sans-serif', 
+                    'system-ui', 
+                    '-apple-system', 
+                    'system-ui', 
+                    'Segoe UI', 
+                    'Roboto', 
+                    'Helvetica Neue', 
+                    'Arial', 
+                    'Noto Sans', 
+                    'sans-serif', 
+                    'Apple Color Emoji', 
+                    'Segoe UI Emoji', 
+                    'Segoe UI Symbol', 
+                    'Noto Color Emoji'
+                ]
+                    }
+                }
+            }
+        </script>
+
+        <style> 
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            /* INFI Scroll CSS */
+            .wrapper {
+            width: 97%;
+            max-width: 1536px;
+            margin-inline: auto;
+            position: relative;
+            height: 6rem;
+            overflow: hidden;
+            mask-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0)
+                );
+            }
+
+            @keyframes scrollLeft {
+            to {
+                left: -200px;
+            }
+            }
+
+
+            .item {
+            width: 4rem;
+            height: auto;
+            position: absolute;
+            left: max(calc(4rem * 10), 100%);
+            animation-name: scrollLeft;
+            animation-duration: 60s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            img {
+                width: 4rem;
+                height:auto; 
+    
+            }
+            } 
+
+            .item1 {
+            animation-delay: calc(60s / 10 * (10 - 1) * -1);
+            }
+
+            .item2 {
+            animation-delay: calc(60s / 10 * (10 - 2) * -1);
+            }
+
+            .item3 {
+            animation-delay: calc(60s / 10 * (10 - 3) * -1);
+            }
+
+            .item4 {
+            animation-delay: calc(60s / 10 * (10 - 4) * -1);
+            }
+
+            .item5 {
+            animation-delay: calc(60s / 10 * (10 - 5) * -1);
+            }
+
+            .item6 {
+            animation-delay: calc(60s / 10 * (10 - 6) * -1);
+            }
+
+            .item7 {
+            animation-delay: calc(60s / 10 * (10 - 7) * -1);
+            }
+
+            .item8 {
+            animation-delay: calc(60s / 10 * (10 - 8) * -1);
+            }
+            .item9 {
+            animation-delay: calc(60s / 10 * (10 - 9) * -1);
+            }
+            .item10 {
+            animation-delay: calc(60s / 10 * (10 - 10) * -1);
+            }
+        </style>
+
+    </head>
+    <body class="bg-gray-500 dark:bg-gray-800 static">
+
+        <header class="relative">
+
+            <nav
+                class="relative bg-gray-200 border-gray-200 dark:border-gray-600 dark:bg-slate-900">
+                <div
+                    class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+                    <a href="#"
+                        class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <span
+                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CodeAndChords</span>
+                    </a>
+                    <button data-collapse-toggle="mega-menu-full-image"
+                        type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 me-5 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mega-menu-full-image"
+                        aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div id="mega-menu-full-image"
+                        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+                        <ul
+                            class="flex flex-col mt-4 me-5 pe-3 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+
+                            <li>
+                                <button id="mega-menu-full-cta-image-button"
+                                    data-collapse-toggle="mega-menu-full-image-dropdown"
+                                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Project Demos
+                                    <svg class="w-2.5 h-2.5 ms-2 m-auto"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg></button>
+                            </li>
+                            <li>
+                                <a href="#aboutme"
+                                    class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            </li>
+                            <li>
+                                <a href="#contactme"
+                                    class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="p-2 absolute z-5 top-2.5 right-0">
+                        <button id="theme-toggle" type="button"
+                            data-tooltip-target="tooltip-theme"
+                            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2">
+                            <svg id="theme-toggle-dark-icon"
+                                class="hidden w-4 h-4"
+                                fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                            <svg id="theme-toggle-light-icon"
+                                class="hidden w-4 h-4"
+                                fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"></path></svg>
+
+                            <div id="tooltip-theme" role="tooltip"
+                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                Switch Theme
+                                <div class="tooltip-arrow"
+                                    data-popper-arrow></div>
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="mega-menu-full-image-dropdown"
+                        class="mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600 hidden z-10">
+                        <div
+                            class="grid max-w-screen-xl px-4 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
+
+                            <ul class="mb-4 space-y-4 md:mb-0"
+                                aria-labelledby="mega-menu-full-image-button">
+                                <li>
+                                    <h1 class="text-2xl font-bold">Coding
+                                        Projects Demos</h1>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://youtu.be/5ZL2Br8juP8?si=DH8p6Ris4aRcAACI"  target="_blank"
+                                        class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                        Clinic Website with Appointment Booking
+                                        System
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://youtu.be/aSDjql_29Io?list=PLhcSIfnyHjLZdxe8vtsqQMksTBdsOn1ko" target="_blank"
+                                        class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                        Youtube Playlist Downloader
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://youtu.be/h3Mb1i52vjs?list=PLhcSIfnyHjLZdxe8vtsqQMksTBdsOn1ko" target="_blank"
+                                        class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                        Ebay-like Commerce Auction App
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://youtu.be/Mkjd7XZrR-0?list=PLhcSIfnyHjLZdxe8vtsqQMksTBdsOn1ko" target="_blank"
+                                        class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                        Simple POS for a Small Restaurant
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="mb-4 space-y-4 md:mb-0">
+                                <li>
+                                    <a
+                                        href="https://youtu.be/KWPnZY_Ozgw?list=PLhcSIfnyHjLZdxe8vtsqQMksTBdsOn1ko"  target="_blank"
+                                        class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                        Simple Email App
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://youtu.be/GmFS7tSqWB4?list=PLhcSIfnyHjLZdxe8vtsqQMksTBdsOn1ko"  target="_blank"
+                                        class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                        Simple Social Media App
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://rjpsalms.github.io/website-template101/"  target="_blank"
+                                        class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                        Portfolio Website Template 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://rjpsalms.github.io/site/"  target="_blank"
+                                        class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                        Portfolio Website Template 2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class=" m-auto p-auto">
+                                <p
+                                    class="max-w-xl mb-5 font-bold leading-tight tracking-tight text-white">Check
+                                    out my Youtube channel for some acoustic
+                                    covers!</p>
+                                <iframe
+                                    src="https://www.youtube.com/embed/MQpGv5KL-mU?list=PLa84XI6uCqKA91BjPJt1lXUalzihh7buc"
+                                    title="Ancient of Days  Acoustic Guitar Instrumental with Lyrics"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </nav>
+
+        </header>
+
+        <hero>
+            <section
+                class="bg-white dark:bg-gradient-to-r from-slate-950 to-gray-700"">
+                <div
+                    class="grid justify-center text-center max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                    <div class="mr-auto place-self-center lg:col-span-7">
+                        <h1
+                            class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">CodeAndChords</h1>
+                        <p
+                            class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-200 max-w-[65ch]">Hi!,
+                            I'm Rj Psalms, a passionate <strong
+                                class="dark:text-white font-semibold ">Musician</strong>
+                            and <strong
+                                class="dark:text-white font-semibold">Developer</strong>.
+                            <br>
+
+                            As a musician, I create peaceful song
+                            instrumentals on the acoustic guitar. <br><br>
+
+                            In the realm of web development, I specialize in
+                            building dynamic and robust applications using
+                            Django, Python, Tailwind, and the latest
+                            cutting-edge
+                            tools and technologies.
+                        </p>
+                        <a href="#contactme"
+                            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 dark:focus:ring-indigo-900">
+                            Contact me
+                            <svg class="w-5 h-5 ml-2 -mr-1"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path></svg>
+                        </a>
+                        <a href="#projects"
+                            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                            Check my projects
+                        </a>
+                    </div>
+                    <div
+                        class="mt-3 hidden md:block lg:mt-0 col-span-5 lg:flex">
+
+                        <div id="default-carousel" class="relative w-full ="
+                            data-carousel="slide">
+                            <!-- Carousel wrapper -->
+                            <div
+                                class="relative h-96 overflow-hidden rounded-lg md:h-96">
+                                <!-- Item 1 -->
+                                <div
+                                    class="hidden duration-1000 ease-in-out"
+                                    data-carousel-item>
+                                    <img src="ss/ss (1).png"
+                                        class="absolute block rounded-lg w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                        alt="...">
+                                </div>
+                                <!-- Item 2 -->
+                                <div
+                                    class="hidden duration-1000 ease-in-out"
+                                    data-carousel-item>
+                                    <img src="ss/ss (2).png"
+                                        class="absolute block rounded-lg w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                        alt="...">
+                                </div>
+                                <!-- Item 3 -->
+                                <div
+                                    class="hidden duration-1000 ease-in-out"
+                                    data-carousel-item>
+                                    <img src="ss/ss (3).png"
+                                        class="absolute block rounded-lg w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                        alt="...">
+                                </div>
+                                <!-- Item 4 -->
+                                <div
+                                    class="hidden duration-1000 ease-in-out"
+                                    data-carousel-item>
+                                    <img src="ss/ss (4).png"
+                                        class="absolute block rounded-lg w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                        alt="...">
+                                </div>
+                                <!-- Item 5 -->
+                                <div
+                                    class="hidden duration-1000 ease-in-out"
+                                    data-carousel-item>
+                                    <img src="ss/ss (5).png"
+                                        class="absolute block rounded-lg w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <!-- Slider indicators -->
+                            <div
+                                class="hidden absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                <button type="button"
+                                    class="w-3 h-3 rounded-full"
+                                    aria-current="true" aria-label="Slide 1"
+                                    data-carousel-slide-to="0"></button>
+                                <button type="button"
+                                    class="w-3 h-3 rounded-full"
+                                    aria-current="false"
+                                    aria-label="Slide 2"
+                                    data-carousel-slide-to="1"></button>
+                                <button type="button"
+                                    class="w-3 h-3 rounded-full"
+                                    aria-current="false"
+                                    aria-label="Slide 3"
+                                    data-carousel-slide-to="2"></button>
+                                <button type="button"
+                                    class="w-3 h-3 rounded-full"
+                                    aria-current="false"
+                                    aria-label="Slide 4"
+                                    data-carousel-slide-to="3"></button>
+                                <button type="button"
+                                    class="w-3 h-3 rounded-full"
+                                    aria-current="false"
+                                    aria-label="Slide 5"
+                                    data-carousel-slide-to="4"></button>
+                            </div>
+                            <!-- Slider controls -->
+                            <button type="button"
+                                class="hidden absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-prev>
+                                <span
+                                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                    <svg
+                                        class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M5 1 1 5l4 4" />
+                                    </svg>
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+                            <button type="button"
+                                class="hidden absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-next>
+                                <span
+                                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                    <svg
+                                        class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m1 9 4-4-4-4" />
+                                    </svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </hero>
+
+        <section class="bg-gray-200 dark:bg-slate-950 py-5" id="techstack">
+
+            <div
+                class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+
+                <h1
+                    class="mb-4 text-2xl font-bold tracking-tight leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-white">My
+                    Techstack</h1>
+                <p
+                    class="mb-12 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Using
+                    these latest tools, I'm building modern, responsive and
+                    beautiful websites and software applications.</p>
+                <div
+                    class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+
+                    <div class="wrapper">
+                        <div class="item item2"><img
+                                src="techstack/icons8-css-480.png"><span
+                                class="dark:text-white">CSS3</span></div>
+                        <div class="item item1"><img
+                                src="techstack/icons8-bootstrap-480.png"><span
+                                class="dark:text-white">Bootstrap</span></div>
+                        <div class="item item3"><img
+                                src="techstack/icons8-django-480.png"><span
+                                class="dark:text-white">Django</span></div>
+                        <div class="item item4"><img
+                                src="techstack/icons8-html-480.png"><span
+                                class="dark:text-white">HTML5</span></div>
+                        <div class="item item5"><img
+                                src="techstack/icons8-javascript-480.png"><span
+                                class="dark:text-white">Javascript</span></div>
+                        <div class="item item6"><img
+                                src="techstack/icons8-python-480.png"><span
+                                class="dark:text-white">Python</span></div>
+                        <div class="item item7"><img
+                                src="techstack/icons8-flask-512.png"><span
+                                class="dark:text-white">Flask</span></div>
+                        <div class="item item8"><img
+                                src="techstack/icons8-sql-96.png"><span
+                                class="dark:text-white">SQL</span></div>
+                        <div class="item item9"><img
+                                src="techstack/icons8-tailwind-css-480.png"><span
+                                class="dark:text-white">Tailwind</span></div>
+                        <div class="item item10"><img
+                                src="https://flowbite.com/docs/images/logo.svg"
+                                alt="Flowbite Logo" /><span
+                                class="dark:text-white">Flowbite</span>/div>
+                        </div>
+                    </div>
+        </section>
+
+        <main class="h-auto">
+
+            <section class="bg-white dark:bg-gray-900"
+                id="projects">
+                <h2
+                    class="text-2xl md:text-3xl lg:text-4xl tracking-tight font-bold text-gray-900 dark:text-white text-center pt-10 pb-5">Projects
+                    Gallery</h2>
+                
+                <div dir="rtl"
+                    class="gap-16 items-center py-8 px-5 mx-auto max-w-screen-xl md:grid md:grid-cols-2 md:py-16 md:px-6 pb-20">
+                    <div
+                        class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                        <h2
+                            class="mb-4 text-1xl md:text-2xl lg:text-3xl tracking-tight font-semibold text-gray-900 dark:text-white  max-w-[30ch]">Clinic
+                            Website with Appointment Booking
+                            System</h2>
+                        <p class="mb-4">This project is for my final
+                            submission to Harvard's CS50 Web
+                            Programming with Python and Javascript
+                        </p>
+                        <p class="hidden lg:block">
+                            This a Django-based web application
+                            created for a pseudo-clinic called
+                            Radiant, designed to manage the clinic's
+                            appointments efficiently. It provides
+                            features for booking appointments,
+                            managing appointment statuses, and
+                            sending confirmation emails to patients.
+                            And being a website, it also contain all
+                            of the clinic's services, offers, staff,
+                            etc,. Informations and images contained
+                            in this project are AI generated just to
+                            populate the pages.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <img
+                            class="w-full max-w-fit rounded-lg transition-transform ease-in-out delay-150 hover:scale-110 hover:max-w-fit duration-500"
+                            src="clinic_img/clin (7).png"
+                            alt="clinic website booking page">
+                        <img
+                            class="mt-4 w-full max-w-fit lg:mt-10 rounded-lg transition-transform ease-in-out delay-150 hover:scale-110 duration-500"
+                            src="clinic_img/clin (8).png"
+                            alt="clinic website homepage">
+
+                        
+
+                            <!-- Modal toggle -->
+                            <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800" type="button">
+                                See more Screenshots
+                            </button>
+        
+                            <!-- Main modal -->
+                            <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                                <div class="relative p-4 w-full max-w-screen-lg max-h-full">
+                                    <!-- Modal content -->
+                                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                        <!-- Modal header -->
+                                        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                                Screenshots
+                                            </h3>
+                                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                                </svg>
+                                                <span class="sr-only">Close modal</span>
+                                            </button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="p-4 md:p-5 space-y-4">
+
+                                            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                                <!-- Carousel wrapper -->
+                                                <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+                                                    <!-- Item 1 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="clinic_img/clin (1).png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 2 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="clinic_img/clin (2).png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 3 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="clinic_img/clin (3).png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 4 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="clinic_img/clin (4).png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 5 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="clinic_img/clin (5).png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 6 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="clinic_img/clin (6).png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 7 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="clinic_img/clin (7).png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 8 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="clinic_img/clin (8).png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                </div>
+                                                <!-- Slider indicators -->
+                                                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 7" data-carousel-slide-to="6"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 8" data-carousel-slide-to="7"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 9" data-carousel-slide-to="8"></button>
+                                                </div>
+                                                <!-- Slider controls -->
+                                                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                                        </svg>
+                                                        <span class="sr-only">Previous</span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                                        </svg>
+                                                        <span class="sr-only">Next</span>
+                                                    </span>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                            <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href="https://youtu.be/5ZL2Br8juP8" target="_blank">Check demo in Youtube</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+  
+
+                    </div>
+    
+                </div>
+
+                <div dir="ltr"
+                    class="gap-16 items-center py-8 px-5 mx-auto max-w-screen-xl md:grid md:grid-cols-2 md:py-16 md:px-6  pb-20">
+                    <div
+                        class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                        <h2
+                            class="mb-4 text-1xl md:text-2xl lg:text-3xl tracking-tight font-semibold text-gray-900 dark:text-white  max-w-[30ch]">POS
+                            Software for a Small Restaurant</h2>
+                        <p class="mb-4"> This is a simple POS system
+                            I built for my brother's small
+                            restaurant.
+                        </p>
+                        <p class="hidden lg:block">Built with
+                            CustomTkinter GUI, it has dark and light
+                            theme. Clicking a Menu category shows
+                            the menu items accordingly. The buttons
+                            rely on the database written in JSON,
+                            the user must input the menu and menu
+                            items accurately in .json format, the
+                            buttons then are updated accordingly.
+                            This is my first personal python
+                            program, I built it for my CS50p's final
+                            project.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <img
+                            class="w-full rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-105 duration-300"
+                            src="POS_img/Screenshot 2024-07-09 115949.png"
+                            alt="clinic website booking page">
+                        <img
+                            class="mt-4 w-full lg:mt-10 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"
+                            src="POS_img/Screenshot 2024-07-09 120036.png"
+                            alt="clinic website homepage">
+
+
+
+                        <!-- Modal toggle -->
+                        <button data-modal-target="default-modal-pos" data-modal-toggle="default-modal-pos" class="block text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800" type="button">
+                            See more Screenshots
+                        </button>
+
+                        <!-- Main modal -->
+                        <div id="default-modal-pos" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative p-4 w-full max-w-screen-lg max-h-full">
+                                <!-- Modal content -->
+                                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                    <!-- Modal header -->
+                                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                            Screenshots
+                                        </h3>
+                                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal-pos">
+                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="p-4 md:p-5 space-y-4">
+
+                                        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                            <!-- Carousel wrapper -->
+                                            <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+                                                <!-- Item 1 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="POS_img/Screenshot 2024-07-09 115949.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                                <!-- Item 2 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="POS_img/Screenshot 2024-07-09 120001.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                                <!-- Item 3 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="POS_img/Screenshot 2024-07-09 120017.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                                <!-- Item 4 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="POS_img/Screenshot 2024-07-09 120105.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                                <!-- Item 5 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="POS_img/Screenshot 2024-07-09 120340.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                                <!-- Item 6 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="POS_img/Screenshot 2024-07-09 120340.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                                <!-- Item 7 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="POS_img/Screenshot 2024-07-09 120411.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                                
+                                            </div>
+                                            <!-- Slider indicators -->
+                                            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 7" data-carousel-slide-to="6"></button>
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 8" data-carousel-slide-to="7"></button>
+                                            </div>
+                                            <!-- Slider controls -->
+                                            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                                    </svg>
+                                                    <span class="sr-only">Previous</span>
+                                                </span>
+                                            </button>
+                                            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                                    </svg>
+                                                    <span class="sr-only">Next</span>
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                        <button data-modal-hide="default-modal-pos" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href="https://youtu.be/Mkjd7XZrR-0" target="_blank">Check demo in Youtube</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div dir="rtl"
+                    class="gap-16 items-center py-8 px-5 mx-auto max-w-screen-xl md:grid md:grid-cols-2 md:py-16 md:px-6  pb-20">
+                    <div
+                        class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                        <h2
+                            class="mb-4 text-1xl md:text-2xl lg:text-3xl tracking-tight font-semibold text-gray-900 dark:text-white  max-w-[30ch]">Youtube
+                            Playlist Downloader</h2>
+                        <p class="mb-4">
+                            A simple but powerful downloader for
+                            Youtube. It allows the user to download
+                            all the contents of a youtube playlist
+                            through the playlist's link
+
+                        </p>
+                        <p class="hidden lg:block">
+                            With one click, the user can get all the
+                            videos
+                            he want, either in video or audio file
+                            type. Single file download is also
+                            available. The user can choose a
+                            prefered folder for the download
+                            location. It also has a cancel button to
+                            cancel the ongoing download
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <img
+                            class="w-full rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-105 duration-300"
+                            src="ytdlr_img/Screenshot 2024-07-09 123550.png"
+                            alt="Youtube Downloader Screen shot">
+                        <img
+                            class="mt-4 w-full lg:mt-10 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"
+                            src="ytdlr_img/Screenshot 2024-07-09 123722.png"
+                            alt="Youtube Downloader Screenshot">
+
+                        
+                        <!-- Modal toggle -->
+                        <button data-modal-target="default-modal-yt" data-modal-toggle="default-modal-yt" class="block text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800" type="button">
+                            See more Screenshots
+                        </button>
+    
+                        <!-- Main modal -->
+                        <div id="default-modal-yt" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative p-4 w-full max-w-screen-lg max-h-full">
+                                <!-- Modal content -->
+                                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                    <!-- Modal header -->
+                                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                            Screenshots
+                                        </h3>
+                                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal-yt">
+                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="p-4 md:p-5 space-y-4">
+
+                                        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                            <!-- Carousel wrapper -->
+                                            <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+                                                <!-- Item 1 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="ytdlr_img/Screenshot 2024-07-09 123438.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                                <!-- Item 2 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="ytdlr_img/Screenshot 2024-07-09 123550.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                                <!-- Item 3 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="ytdlr_img/Screenshot 2024-07-09 123722.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                                <!-- Item 4 -->
+                                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                    <img src="ytdlr_img/Screenshot 2024-07-09 125355.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                </div>
+                                            
+                                            </div>
+                                            <!-- Slider indicators -->
+                                            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                                            </div>
+                                            <!-- Slider controls -->
+                                            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                                    </svg>
+                                                    <span class="sr-only">Previous</span>
+                                                </span>
+                                            </button>
+                                            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                                    </svg>
+                                                    <span class="sr-only">Next</span>
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                        <button data-modal-hide="default-modal-yt" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href="https://youtu.be/aSDjql_29Io" target="_blank">Check demo in Youtube</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div dir="ltr"
+                    class="gap-16 items-center py-8 px-5 mx-auto max-w-screen-xl md:grid md:grid-cols-2 md:py-16 md:px-6  pb-20">
+                    <div
+                        class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                        <h2
+                            class="mb-4 text-1xl md:text-2xl lg:text-3xl tracking-tight font-semibold text-gray-900 dark:text-white  max-w-[30ch]">Ebay-like
+                            Ecommerce Auction App</h2>
+                        <p class="mb-4">
+                            This Ebay-like app is a commerce auction
+                            site built with Django and Bootstrap for
+                            the components.
+                        </p>
+                   
+                        <p class="hidden lg:block">
+                            The app allows the users create an account,
+                            post listings, place bids on listing,
+                            comment on those listings, and add listings
+                            to a 'watchlist'. The admin/superuser can
+                            utilize Django's admin page to manipulate
+                            the data.
+                        </p>
+                    </div>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <img
+                        class="w-full rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-105 duration-300"
+                        src="commerce_img/Screenshot 2024-07-09 112926.png"
+                        alt="clinic website booking page">
+                    <img
+                        class="mt-4 w-full lg:mt-10 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"
+                        src="commerce_img/Screenshot 2024-07-09 112848.png"
+                        alt="clinic website homepage">
+
+                    <!-- Modal toggle -->
+                    <button data-modal-target="default-modal-commerce" data-modal-toggle="default-modal-commerce" class="block text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800" type="button">
+                        See more Screenshots
+                    </button>
+
+                    <!-- Main modal -->
+                    <div id="default-modal-commerce" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-screen-lg max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header -->
+                                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                        Screenshots
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal-commerce">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4 md:p-5 space-y-4">
+
+                                    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                        <!-- Carousel wrapper -->
+                                        <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+                                            <!-- Item 1 -->
+                                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <img src="commerce_img/Screenshot 2024-07-09 113152.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                            </div>
+                                            <!-- Item 2 -->
+                                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <img src="commerce_img/Screenshot 2024-07-09 113000.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                            </div>
+                                            <!-- Item 3 -->
+                                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <img src="commerce_img/Screenshot 2024-07-09 112926.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                            </div>
+                                            <!-- Item 4 -->
+                                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <img src="commerce_img/Screenshot 2024-07-09 112905.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                            </div>
+                                            <!-- Item 5 -->
+                                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <img src="commerce_img/Screenshot 2024-07-09 112848.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                            </div>
+                                            <!-- Item 6 -->
+                                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <img src="commerce_img/Screenshot 2024-07-09 112831.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                            </div>
+                                            
+                                        </div>
+                                        <!-- Slider indicators -->
+                                        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+                                        </div>
+                                        <!-- Slider controls -->
+                                        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                                </svg>
+                                                <span class="sr-only">Previous</span>
+                                            </span>
+                                        </button>
+                                        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                                </svg>
+                                                <span class="sr-only">Next</span>
+                                            </span>
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                    <button data-modal-hide="default-modal-commerce" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href="https://youtu.be/h3Mb1i52vjs"  target="_blank">Check demo in Youtube</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            <p
+                class="text-gray-500 sm:text-lg dark:text-gray-200 py-10 col-span-full text-center">Check
+                my <a
+                    class="font-semibold hover:underline hover:font-semibold"
+                    href="https://github.com/RjPsalms" target="_blank">Github</a>
+                or <a
+                    class="font-semibold hover:underline hover:font-semibold"
+                    href="https://www.youtube.com/@CodeAndChords_Rj" target="_blank">Youtube</a>
+                channel to see all my projects.</p>
+
+            </section>
+            
+
+            <!-- UNCOMMENT WHEN READY TO DEPLOY -->
+            <section id="music" class="bg-gray-200 dark:bg-gray-800">
+                <div class="container mx-auto px-4 py-10">
+                    <h1
+                        class="text-2xl md:text-3xl lg:text-4xl tracking-tight font-bold text-gray-900 dark:text-white text-center pt-10">Some
+                        of my Acoustic Covers</h1>
+                    <p
+                        class="text-center font-light text-gray-500 sm:text-lg dark:text-gray-400 pb-10">Most
+                        of my covers are Christian Hymns, both
+                        contemporary and old</p>
+                    <div
+                        class="flex flex-wrap gap-10 p-3 m-5 justify-center">
+                        <div>
+                            <iframe class="fluid rounded-lg"
+                                src="https://www.youtube.com/embed/wNE7XjZiJv8"
+                                title="As The Deer Instrumental   Peaceful and relaxing on Acoustic Guitar"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <iframe class="fluid rounded-lg"
+                                src="https://www.youtube.com/embed/qoIJpjP3Hiw?list=PLa84XI6uCqKA91BjPJt1lXUalzihh7buc"
+                                title="In Christ Alone Instrumental  in Peaceful Acoustic (No Waves Sound)"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div>
+                            <iframe class="fluid rounded-lg"
+                                src="https://www.youtube.com/embed/qa4-iGmh04I?list=PLa84XI6uCqKA91BjPJt1lXUalzihh7buc"
+                                title="Yet Not I But Through Christ in Me in Peaceful Acoustic"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <iframe class="fluid rounded-lg"
+                                src="https://www.youtube.com/embed/6KcB9tiPkwY?list=PLa84XI6uCqKA91BjPJt1lXUalzihh7buc"
+                                title="He Will Hold Me Fast Peaceful Acoustic Instumental with Lyrics"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <iframe class="fluid rounded-lg"
+                                src="https://www.youtube.com/embed/o8ke--Er-iw?list=PLa84XI6uCqKA91BjPJt1lXUalzihh7buc"
+                                title="I Cast All My Cares Upon You Peaceful Instrumental 4k"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <iframe class="fluid rounded-lg"
+                                src="https://www.youtube.com/embed/MQpGv5KL-mU?list=PLa84XI6uCqKA91BjPJt1lXUalzihh7buc"
+                                title="Ancient of Days  Acoustic Guitar Instrumental with Lyrics"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <iframe class="fluid rounded-lg"
+                                src="https://www.youtube.com/embed/SrOI807_ilg?list=PLa84XI6uCqKA91BjPJt1lXUalzihh7buc"
+                                title="Holy Holy Holy Instrumental   Acoustic Hymns"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <iframe class="fluid rounded-lg"
+                                src="https://www.youtube.com/embed/Y6G_CEszo6g?list=PLa84XI6uCqKA91BjPJt1lXUalzihh7buc"
+                                title="How Great Thou Art Instrumental   Acoustic Guitar with Lyrics"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="p-4 bg-white sm:p-6 dark:bg-slate-950">
+            <div id="footeritems" class="mx-auto max-w-screen-xl grid grid-cols-4 justify-items-between">
+
+                <div id="aboutme" class="col-start-0 col-span-2">
+                    <h2
+                        class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About Me</h2>
+                    <p class="text-gray-900 dark:text-gray-400">
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Hi, I'm Rj, a self taught developer and musician. I
+                            started learning to code in the summer of 2023, now
+                            I successfully acquired
+                            3 CS50 certificates! CS50 is an online Computer
+                            Science course offered by Harvard, you can pay, or
+                            you can avail for FREE!, which
+                            is unbelievable! Everything I know about
+                            programming, I owe to these awesome professors:
+                            David Malan and Brian Yu, both amazing teachers.
+                          </p><br>
+                          <p class="text-gray-600 dark:text-gray-400">Check <a
+                            href="https://cs50.harvard.edu/python/2022/"
+                            class="font-bold hover:underline" target="_blank" >CS50's page</a>
+                          if you're interested, it's the best course you can
+                          get.</p>
+                    </p>
+                      
+                </div>
+                <div id="followme" class="justify-self-center col-start-3">
+                    <h2
+                        class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow
+                        Me</h2>
+                    <ul
+                        class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a
+                                href="https://github.com/RjPsalms"
+                                class="hover:underline " target="_blank">Github</a>
+                        </li>
+                        <li class="mb-4">
+                            <a
+                                href="www.linkedin.com/in/robert-jr-andaya-375ba6284"
+                                class="hover:underline " target="_blank">Linkedin</a>
+                        </li>
+                        <li class="mb-4">
+                            <a
+                                href="https://www.facebook.com/Rjsrnde/"
+                                class="hover:underline" target="_blank">
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/@Rj_Psalms"
+                                class="hover:underline" target="_blank">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="contactme" class="col-start-4 text-sm font-semibold text-gray-900 dark:text-gray-400 justify-self-center">
+                    <h2
+                        class="text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h2>
+                    <div class="">
+                        <div class="flex pt-5 pb-2 gap-3">
+                            <img class="size-5"
+                                src="https://img.icons8.com/material-rounded/24/40C057/marker.png"
+                                alt="marker" />
+                            <p><a
+                                    href="https://www.google.com/maps/@25.2485731,55.3019081,16z?entry=ttu" target="_blank">Al
+                                    Karama, Dubai, UAE</a></p>
+                        </div>
+                        <div class="flex pb-2 gap-3">
+                            <img class="size-5"
+                                src="https://img.icons8.com/material-rounded/24/40C057/new-post.png"
+                                alt="new-post" />
+                            <p><a
+                                    href="mailto:r13.andaya@gmail.com" target="_blank" >r13.andaya@gmail.com</a></p>
+                        </div>
+                        <div class="flex pb-2 gap-3">
+                            <img class="size-5"
+                                src="https://img.icons8.com/ios-glyphs/30/40C057/phone--v1.png"
+                                alt="phone--v1" />
+                            <p>+971 58 858 9416</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="col-span-full my-6 border-gray-200 dark:border-gray-700 lg:my-8" />
+                
+                <div id="allrightsreserve" class="col-span-full sm:flex sm:items-center sm:justify-self-start">
+                    <span
+                        class="text-sm text-gray-500 sm:text-center dark:text-gray-400">©
+                        2024 <a href="#"
+                            class="hover:underline">CodeAndChords™</a>.
+                        All
+                        Rights
+                        Reserved.
+                    </span>
+
+                </div>
+
+            </div>
+        </footer>
+
+                <!-- FLOWBITE SCRIPTS -->
+        <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+        </script>
+
+        <script>
+        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        // Change the icons inside the button based on previous settings
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        var themeToggleBtn = document.getElementById('theme-toggle');
+
+        themeToggleBtn.addEventListener('click', function() {
+
+            // toggle icons inside button
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            // if set via local storage previously
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+
+            // if NOT set via local storage previously
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+            
+        });
+
+        </script>
+
+            </body>
+        </html>
